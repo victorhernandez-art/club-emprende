@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias | Club Emprende UNACH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Club Emprende UNACH Logo">
+            </a>
+            
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes-somos.html">¿Quiénes somos?</a></li>
+                    <li><a href="competencias.html">Competencias</a></li>
+                    <li><a href="conecta-encuentra.html">Conecta y encuentra</a></li>
+                    <li><a href="forma-parte.html">Forma parte del Club</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                </ul>
+            </nav>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="noticias" class="section-base" style="background-color: var(--color-unach-dark);">
+            <div class="container">
+                <h2 class="section-heading reveal-item" style="color: var(--color-white);">Últimas Noticias</h2>
+                <p class="reveal-item" style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--color-off-white);">
+                    Mantente al día con los logros de nuestros miembros y los próximos eventos.
+                </p>
+                
+                <div class="news-carousel">
+                    <button class="news-arrow prev" id="newsPrev" aria-label="Anterior">‹</button>
+                    <button class="news-arrow next" id="newsNext" aria-label="Siguiente">›</button>
+                    <div class="news-track" id="newsTrack">
+                    <article class="news-card reveal-item" data-news='{"title":"Startup GeoData gana el Premio Nacional de Innovación","date":"Hace 3 días | Logros del Club","cover":"https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=450&fit=crop&crop=center","gallery":["https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=450&fit=crop&crop=center","https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=450&fit=crop&crop=center","https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=450&fit=crop&crop=center"],"body":"GeoData presentó una solución de mapeo inteligente que optimiza la logística urbana. El equipo de emprendedores desarrolló una plataforma que utiliza inteligencia artificial para mejorar la eficiencia en el transporte público y reducir los tiempos de espera en las ciudades."}'>
+                        <div class="news-date-badge">Hace 3 días</div>
+                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=180&fit=crop&crop=center" alt="Evento de Premiación - Startup GeoData" class="news-card-image">
+                        <div class="news-card-content">
+                            <h4>Startup 'GeoData' gana el Premio Nacional de Innovación</h4>
+                            <p>Hace 3 días | Logros del Club</p>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card reveal-item" style="transition-delay: 0.2s;" data-news='{"title":"Abre registro para el Taller de UX/UI para Emprendedores","date":"Hace 1 semana | Formación","cover":"https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=450&fit=crop&crop=center","gallery":["https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=450&fit=crop&crop=center","https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&h=450&fit=crop&crop=center","https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=800&h=450&fit=crop&crop=center"],"body":"Un taller intensivo para mejorar la experiencia de usuario en tu MVP. Los participantes aprenderán las mejores prácticas de diseño centrado en el usuario, prototipado rápido y testing de usabilidad para crear productos digitales que realmente conecten con sus usuarios objetivo."}'>
+                        <div class="news-date-badge">Hace 1 semana</div>
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=180&fit=crop&crop=center" alt="Taller de UX/UI para Emprendedores" class="news-card-image">
+                        <div class="news-card-content">
+                            <h4>Abre registro para el Taller de UX/UI para Emprendedores</h4>
+                            <p>Hace 1 semana | Formación</p>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card reveal-item" style="transition-delay: 0.4s;" data-news='{"title":"Nuevos 5 mentores se unen al Club Emprende UNACH","date":"Hace 2 semanas | Comunidad","cover":"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=450&fit=crop&crop=center","gallery":["https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=450&fit=crop&crop=center","https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=450&fit=crop&crop=center","https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=450&fit=crop&crop=center"],"body":"Damos la bienvenida a especialistas en fintech, marketing y diseño. Estos profesionales aportarán su experiencia en diferentes sectores para guiar a nuestros emprendedores en el desarrollo de sus proyectos, desde la conceptualización hasta la implementación y escalamiento de sus ideas de negocio."}'>
+                        <div class="news-date-badge">Hace 2 semanas</div>
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=180&fit=crop&crop=center" alt="Nuevos Mentores del Club Emprende UNACH" class="news-card-image">
+                        <div class="news-card-content">
+                            <h4>Nuevos 5 mentores se unen al Club Emprende UNACH</h4>
+                            <p>Hace 2 semanas | Comunidad</p>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card reveal-item" style="transition-delay: 0.6s;" data-news='{"title":"Hackathon UNACH 2025: 48 horas de innovación","date":"Hace 3 semanas | Eventos","cover":"https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&h=450&fit=crop&crop=center","gallery":["https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&h=450&fit=crop&crop=center","https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=450&fit=crop&crop=center","https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=450&fit=crop&crop=center"],"body":"Más de 200 participantes desarrollaron soluciones innovadoras para Chiapas. Durante 48 horas intensivas, equipos multidisciplinarios trabajaron en proyectos que abordan desafíos locales como la agricultura sostenible, el turismo comunitario y la educación digital en zonas rurales."}'>
+                        <div class="news-date-badge">Hace 3 semanas</div>
+                        <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=400&h=180&fit=crop&crop=center" alt="Hackathon UNACH 2025" class="news-card-image">
+                        <div class="news-card-content">
+                            <h4>Hackathon UNACH 2025: 48 horas de innovación</h4>
+                            <p>Hace 3 semanas | Eventos</p>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card reveal-item" style="transition-delay: 0.8s;" data-news='{"title":"Programa de Incubación 2025 abre convocatoria","date":"Hace 1 mes | Programas","cover":"https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=450&fit=crop&crop=center","gallery":["https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=450&fit=crop&crop=center","https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=450&fit=crop&crop=center","https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=450&fit=crop&crop=center"],"body":"Acompaña tu startup desde la idea hasta el mercado con mentorías especializadas. El programa incluye acceso a capital semilla, conexiones con inversionistas, mentorías con empresarios exitosos y un espacio de trabajo colaborativo durante 6 meses."}'>
+                        <div class="news-date-badge">Hace 1 mes</div>
+                        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=180&fit=crop&crop=center" alt="Programa de Incubación 2025" class="news-card-image">
+                        <div class="news-card-content">
+                            <h4>Programa de Incubación 2025 abre convocatoria</h4>
+                            <p>Hace 1 mes | Programas</p>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card reveal-item" style="transition-delay: 1.0s;" data-news='{"title":"Encuentro de Emprendedores: 200 asistentes","date":"Hace 1 mes | Eventos","cover":"https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=450&fit=crop&crop=center","gallery":["https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=450&fit=crop&crop=center","https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=450&fit=crop&crop=center","https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=450&fit=crop&crop=center"],"body":"El mayor encuentro de emprendedores del sureste mexicano conectó a más de 200 participantes. Durante dos días, se realizaron más de 50 charlas magistrales, workshops prácticos y sesiones de networking que generaron alianzas estratégicas y oportunidades de colaboración entre startups locales."}'>
+                        <div class="news-date-badge">Hace 1 mes</div>
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=180&fit=crop&crop=center" alt="Encuentro de Emprendedores" class="news-card-image">
+                        <div class="news-card-content">
+                            <h4>Encuentro de Emprendedores: 200 asistentes</h4>
+                            <p>Hace 1 mes | Eventos</p>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card reveal-item" style="transition-delay: 1.2s;" data-news='{"title":"Club Emprende UNACH recibe reconocimiento nacional","date":"Hace 2 meses | Logros del Club","cover":"https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=450&fit=crop&crop=center","gallery":["https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=450&fit=crop&crop=center","https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=450&fit=crop&crop=center","https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=450&fit=crop&crop=center"],"body":"Reconocimiento por el impacto en el ecosistema emprendedor de Chiapas. La Secretaría de Economía Nacional otorgó al Club Emprende UNACH el premio 'Mejor Incubadora Universitaria del Sureste' por su contribución al desarrollo de más de 150 startups locales y la generación de más de 300 empleos directos."}'>
+                        <div class="news-date-badge">Hace 2 meses</div>
+                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=180&fit=crop&crop=center" alt="Reconocimiento Nacional Club Emprende UNACH" class="news-card-image">
+                        <div class="news-card-content">
+                            <h4>Club Emprende UNACH recibe reconocimiento nacional</h4>
+                            <p>Hace 2 meses | Logros del Club</p>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card reveal-item" style="transition-delay: 1.4s;" data-news='{"title":"Workshop de Design Thinking para startups","date":"Hace 2 meses | Formación","cover":"https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=800&h=450&fit=crop&crop=center","gallery":["https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=800&h=450&fit=crop&crop=center","https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&h=450&fit=crop&crop=center","https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=450&fit=crop&crop=center"],"body":"Metodología para desarrollar productos centrados en el usuario. Los participantes aprendieron técnicas de investigación de usuarios, creación de personas, mapas de empatía y prototipado rápido para validar ideas de negocio antes de invertir en desarrollo completo."}'>
+                        <div class="news-date-badge">Hace 2 meses</div>
+                        <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=400&h=180&fit=crop&crop=center" alt="Workshop de Design Thinking" class="news-card-image">
+                        <div class="news-card-content">
+                            <h4>Workshop de Design Thinking para startups</h4>
+                            <p>Hace 2 meses | Formación</p>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modal de noticia a pantalla completa -->
+        <div class="modal-overlay news-modal" id="newsModal" aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="modal" role="document">
+                <button class="modal-close" id="newsModalClose" aria-label="Cerrar">×</button>
+                <div class="modal-header">
+                    <div class="modal-title" id="newsModalTitle">Título de la noticia</div>
+                </div>
+                <div class="modal-body" id="newsModalBody">
+                    <p id="newsDate"></p>
+                    <p id="newsBodyText"></p>
+                    
+                    <!-- Galería con navegación -->
+                    <div class="news-gallery-container">
+                        <h4>Galería de Fotos</h4>
+                        <div class="news-gallery" id="newsGallery">
+                            <!-- Las imágenes se cargarán aquí -->
+                        </div>
+                        <!-- Botones de navegación de la galería -->
+                        <button class="gallery-nav gallery-prev" id="galleryPrev" aria-label="Foto anterior">‹</button>
+                        <button class="gallery-nav gallery-next" id="galleryNext" aria-label="Siguiente foto">›</button>
+                        <div class="gallery-counter" id="galleryCounter">1 / 3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Club Emprende UNACH. Todos los derechos reservados. #OrgulloUNACH</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

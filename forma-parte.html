@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma Parte del Club | Club Emprende UNACH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Club Emprende UNACH Logo">
+            </a>
+            
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes-somos.html">¿Quiénes somos?</a></li>
+                    <li><a href="competencias.html">Competencias</a></li>
+                    <li><a href="conecta-encuentra.html">Conecta y encuentra</a></li>
+                    <li><a href="forma-parte.html">Forma parte del Club</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                </ul>
+            </nav>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="forma-parte" class="section-base">
+            <div class="container">
+                <div class="cta-box reveal-item">
+                    <h2>Lleva tu potencial al límite</h2>
+                    <p>La comunidad de emprendimiento universitario más activa de Chiapas te espera. No necesitas tener una idea, solo ganas de crear.</p>
+                    <button id="openRegistrationBtn" class="cta-button">Regístrate Ahora</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Registro -->
+        <section id="registration-form" class="section-base" style="background-color: var(--color-off-white); display: none;">
+            <div class="container">
+                <div class="registration-container reveal-item">
+                    <div class="registration-header">
+                        <h2>Afiliación al Club Emprende UNACH</h2>
+                        <p>Completa el siguiente formulario para formar parte de nuestra comunidad emprendedora</p>
+                    </div>
+
+                    <form id="affiliationForm" class="registration-form">
+                        <!-- Información Personal -->
+                        <fieldset class="form-section">
+                            <legend>Información Personal</legend>
+                            
+                            <div class="form-group">
+                                <label for="fullName">Nombre Completo *</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                                <span class="error-message" id="fullNameError"></span>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="studentId">Matrícula/Número de Control *</label>
+                                    <input type="text" id="studentId" name="studentId" required>
+                                    <span class="error-message" id="studentIdError"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="career">Carrera *</label>
+                                    <select id="career" name="career" required>
+                                        <option value="">Selecciona tu carrera</option>
+                                        <option value="Ingeniería en Sistemas">Ingeniería en Sistemas</option>
+                                        <option value="Ingeniería Civil">Ingeniería Civil</option>
+                                        <option value="Ingeniería Industrial">Ingeniería Industrial</option>
+                                        <option value="Administración">Administración</option>
+                                        <option value="Contaduría">Contaduría</option>
+                                        <option value="Medicina">Medicina</option>
+                                        <option value="Arquitectura">Arquitectura</option>
+                                        <option value="Psicología">Psicología</option>
+                                        <option value="Derecho">Derecho</option>
+                                        <option value="Enfermería">Enfermería</option>
+                                        <option value="Ciencias de la Comunicación">Ciencias de la Comunicación</option>
+                                        <option value="Turismo">Turismo</option>
+                                        <option value="Biología">Biología</option>
+                                        <option value="Química">Química</option>
+                                        <option value="Física">Física</option>
+                                        <option value="Matemáticas">Matemáticas</option>
+                                        <option value="Agronomía">Agronomía</option>
+                                        <option value="Veterinaria">Veterinaria</option>
+                                        <option value="Otra">Otra</option>
+                                    </select>
+                                    <span class="error-message" id="careerError"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="semester">Semestre *</label>
+                                    <select id="semester" name="semester" required>
+                                        <option value="">Selecciona semestre</option>
+                                        <option value="1">1° Semestre</option>
+                                        <option value="2">2° Semestre</option>
+                                        <option value="3">3° Semestre</option>
+                                        <option value="4">4° Semestre</option>
+                                        <option value="5">5° Semestre</option>
+                                        <option value="6">6° Semestre</option>
+                                        <option value="7">7° Semestre</option>
+                                        <option value="8">8° Semestre</option>
+                                        <option value="9">9° Semestre</option>
+                                        <option value="10">10° Semestre</option>
+                                    </select>
+                                    <span class="error-message" id="semesterError"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Teléfono (Opcional)</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="961 123 4567">
+                                    <span class="error-message" id="phoneError"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Correo Institucional *</label>
+                                <input type="email" id="email" name="email" placeholder="tu.nombre@unach.mx" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                        </fieldset>
+
+                        <!-- Intereses Emprendedores -->
+                        <fieldset class="form-section">
+                            <legend>Intereses Emprendedores</legend>
+                            <div class="form-group">
+                                <label>¿En qué áreas te interesa emprender? (Puedes seleccionar varias) *</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="Tecnología">
+                                        <span class="checkmark"></span>
+                                        Tecnología
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="Social">
+                                        <span class="checkmark"></span>
+                                        Social
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="Cultural">
+                                        <span class="checkmark"></span>
+                                        Cultural
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="Agroindustria">
+                                        <span class="checkmark"></span>
+                                        Agroindustria
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="Otro">
+                                        <span class="checkmark"></span>
+                                        Otro
+                                    </label>
+                                </div>
+                                <span class="error-message" id="interestsError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="motivation">¿Por qué quieres unirte al Club Emprende UNACH? *</label>
+                                <textarea id="motivation" name="motivation" rows="4" placeholder="Cuéntanos tu motivación para formar parte de nuestra comunidad..." required></textarea>
+                                <span class="error-message" id="motivationError"></span>
+                            </div>
+                        </fieldset>
+
+                        <!-- Botones -->
+                        <div class="form-actions">
+                            <button type="button" id="cancelBtn" class="btn-secondary">Cancelar</button>
+                            <button type="submit" class="btn-primary">Enviar Solicitud</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal de Confirmación -->
+        <div class="modal-overlay" id="confirmationModal" aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="modal" role="document">
+                <div class="modal-header">
+                    <div class="modal-icon">✅</div>
+                    <div class="modal-title">¡Solicitud Enviada!</div>
+                </div>
+                <div class="modal-body">
+                    <p>¡Gracias por tu interés en formar parte del Club Emprende UNACH!</p>
+                    <p>Tu solicitud de afiliación ha sido recibida correctamente. Te contactaremos pronto a tu correo institucional para confirmar tu registro y darte la bienvenida a nuestra comunidad.</p>
+                    <div class="confirmation-details">
+                        <h4>Detalles de tu solicitud:</h4>
+                        <div id="confirmationInfo"></div>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button id="closeConfirmationBtn" class="btn-primary">Entendido</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Club Emprende UNACH. Todos los derechos reservados. #OrgulloUNACH</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
